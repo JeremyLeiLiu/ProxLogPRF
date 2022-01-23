@@ -27,31 +27,30 @@ them to a file named *-report.txt under 'ProxLogPRF/result'. In addition, the *.
     $ java -cp "lib/*:" ProxPRF.BM25 -h                                       # use this command to check arguments usages
     ```
 
-- Step 3: evaluate the retrieval model
-We use trecEval.py to evaluate the model performance via MAP, P@k, nDCG and nDCG@k.
+- Step 3: evaluate the retrieval model - we use trecEval.py to evaluate the model performance in terms of MAP, P@20, nDCG and nDCG@20.
     ```
     $ python trecEval.py result/BM25/WT2G-BM25-1.2-0.35-report.txt query-judge/qrels.WT2G result/WT2G-BM25-1.2-0.35.xls
     ```
 
 ### Package structure
 - analyzer
-    - MyStopAndStemmingAnalyzer.java: stopwords removal and stemming
+    - MyStopAndStemmingAnalyzer.java: stopwords removal and stemming.
 - common
-    - ByWeightComparator.java -- numerical comparator.
-    - MyQQParser.java -- simplistic quality query parser.
-    - MyTrecParser.java -- TREC document analyzer
-    - QualityStats.java -- compute the results (MAP, P@k and MRR) of quality benchmark run for a single query or for a set of queries.
-    - StaTools.java -- implementation on some basic statistical functions
-- datasets -- directory to the data collections
+    - ByWeightComparator.java: numerical comparator.
+    - MyQQParser.java: simplistic quality query parser.
+    - MyTrecParser.java: TREC document parser.
+    - QualityStats.java: compute the results (MAP, P@k and MRR) of quality benchmark run for a single query or for a set of queries.
+    - StaTools.java: implementation on some basic statistical functions
+- datasets: directory to the data collections
 - index
-    - IndexTREC.java -- create index for data collections
-- indices -- directory to the files containing index of each data collection
-- lib -- directory to all the *.jar packages used for the project
-- models -- directory to all the retrieval models (i.e. BM25, DLM, LL, LLPRF, LLEXPStar (LL+EXP*), PRoc2, PRoc3 and ProxLogPRF)
-- query-judge -- directory to all the query topics
-- result -- directory to the experimental results
-- stopwords.txt -- stopwords used in our experiments
-- trecEval.py -- evaluation metrics
+    - IndexTREC.java: create index for data collections
+- indices: directory to the files containing index of each data collection
+- lib: directory to all the *.jar packages used for the project
+- models: directory to all the retrieval models (i.e. BM25, DLM, LL, LLPRF, LLEXPStar (LL+EXP*), PRoc2, PRoc3 and ProxLogPRF)
+- query-judge: directory to all the query topics
+- result: directory to the experimental results
+- stopwords.txt: stopwords used in our experiments
+- trecEval.py: evaluation metrics
 
 
 ### Data collections
