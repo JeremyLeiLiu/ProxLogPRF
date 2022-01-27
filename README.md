@@ -73,5 +73,5 @@ documents with inherent noises.
 This research is supported by the [Natural Sciences and Engineering Research Council (NSERC) of Canada](https://www.nserc-crsng.gc.ca/index_eng.asp), 
 the [York Research Chairs (YRC) program](https://www.yorku.ca/research/york-research-chairs/),
 [NSERC CREATE award](https://www.nserc-crsng.gc.ca/Professors-Professeurs/Grants-Subs/CREATEResults-ResultatsFONCER_eng.asp?Year=2015) 
-and an [ORF-RE (Ontario Research Fund Research Excellence award](https://www.ontario.ca/page/ontario-research-fund-research-excellence) 
+and an [ORF-RE (Ontario Research Fund Research Excellence award)](https://www.ontario.ca/page/ontario-research-fund-research-excellence) 
 in [BRAIN Alliance](https://brainalliance.ca/en).
