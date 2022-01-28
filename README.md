@@ -18,9 +18,10 @@ submitted to Information Processing & Management (IP&M).
     $ java -cp "lib/*:" index.IndexTREC -docs datasets/WT2G/ -data WT2G       # create index for WT2G
     ```
 
-- Step 2: retrieve the documents using each model (e.g. BM25). ps: Step 2 generates the ranking results and outputs 
-them to a file named *-report.txt under 'ProxLogPRF/result'. In addition, the *.txt files containing the metric results 
-(i.e. MAP and P@k) will also be generated under 'ProxLogPRF/result'.
+- Step 2: retrieve the documents using each model (e.g. BM25). The ranking results will be generated to a file 
+named *-report.txt under 'ProxLogPRF/result'. In addition, the *.txt file containing the metric results 
+in terms of MAP will also be generated under 'ProxLogPRF/result' - this result will be used to find the best 
+model.
     ```
     $ javac -cp "lib/*:" ./*.java                                             # compile
     $ java -cp "lib/*:" models.BM25 -k1 1.2 -b 0.35                          # use BM25 model to retrieve documents
@@ -70,8 +71,7 @@ documents with inherent noises.
 
 
 ### Acknowledgments
-This research is supported by the [Natural Sciences and Engineering Research Council (NSERC) of Canada](https://www.nserc-crsng.gc.ca/index_eng.asp), 
-the [York Research Chairs (YRC) program](https://www.yorku.ca/research/york-research-chairs/),
-[NSERC CREATE award](https://www.nserc-crsng.gc.ca/Professors-Professeurs/Grants-Subs/CREATEResults-ResultatsFONCER_eng.asp?Year=2015) 
+This research have been supported by the [Natural Sciences and Engineering Research Council (NSERC) of Canada](https://www.nserc-crsng.gc.ca/index_eng.asp), 
+the [York Research Chairs (YRC) program](https://www.yorku.ca/research/york-research-chairs/), the [NSERC CREATE award](https://www.nserc-crsng.gc.ca/Professors-Professeurs/Grants-Subs/CREATEResults-ResultatsFONCER_eng.asp?Year=2015) 
 and an [ORF-RE (Ontario Research Fund Research Excellence award)](https://www.ontario.ca/page/ontario-research-fund-research-excellence) 
 in [BRAIN Alliance](https://brainalliance.ca/en).
